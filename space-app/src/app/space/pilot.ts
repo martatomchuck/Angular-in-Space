@@ -20,5 +20,4 @@ export class Pilot {
     this.firstName = values[0];
     this.lastName = values[1];
   }
-
 }

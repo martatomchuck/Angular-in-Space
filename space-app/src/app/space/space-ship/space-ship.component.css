@@ -1,13 +1,17 @@
 :host {
   display: inline-block;
-  max-width: 120px;
+  max-width: 160px;
   margin: 10px;
   text-align: center;
 }
 
+.spaceship {
+  max-height: 100%;
+}
+
 img {
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .health {
@@ -37,10 +41,14 @@ img {
 
 .images .pilot {
   position: absolute;
-  bottom: -10px;
-  right: -5px;
-  width: 35%;
-  background-color: rgba(0, 0, 0, 0.605);
+  bottom: 0px;
+  right: 0px;
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.658);
   padding: 5px;
   border-radius: 50%;
+}
+
+.actions {
+  height: 28px;
 }

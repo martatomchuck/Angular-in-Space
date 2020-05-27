@@ -1,20 +1,26 @@
-<h4>{{spaceShip.modelName}}</h4>
+<div class="spaceship">
+  <h4>{{spaceShip.modelName}}</h4>
 
-<div class="images">
-  <img [src]="spaceShip.imageUrl"/>
-  <img class="pilot" *ngIf="spaceShip.pilot" [src]="spaceShip.pilot.imageUrl"/>
+  <div class="images">
+    <img [src]="spaceShip.imageUrl"/>
+    <img class="pilot" *ngIf="spaceShip.pilot" [src]="spaceShip.pilot.imageUrl"/>
+  </div>
+
+  <div class="health" [title]="'Health ' + spaceShip.health + '%'">
+    <div [style.width.%]="spaceShip.health"></div>
+  </div>
+
+  <div class="property" [class.active]="spaceShip.activeShields">
+    SHIELDS
+  </div>
+
+  <div class="property" [class.active]="spaceShip.activeWeapons">
+    WEAPONS
+  </div>
 </div>
 
-<div class="health" [title]="'Health ' + spaceShip.health + '%'">
-  <div [style.width.%]="spaceShip.health"></div>
-</div>
-
-<div class="property" [class.active]="spaceShip.activeShields">
-  SHIELDS
-</div>
-
-<div class="property" [class.active]="spaceShip.activeWeapons">
-  WEAPONS
+<div class="actions">
+  <ng-content></ng-content>
 </div>
 
 
