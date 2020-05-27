@@ -1,6 +1,6 @@
 :host {
   display: inline-block;
-  max-width: 130px;
+  max-width: 120px;
   margin: 10px;
   text-align: center;
 }
@@ -29,4 +29,18 @@ img {
 
 .property.active {
   color: white;
+}
+
+.images {
+  position: relative;
+}
+
+.images .pilot {
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
+  width: 35%;
+  background-color: rgba(0, 0, 0, 0.605);
+  padding: 5px;
+  border-radius: 50%;
 }

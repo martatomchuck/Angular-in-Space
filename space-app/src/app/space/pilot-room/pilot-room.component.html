@@ -1,0 +1,15 @@
+<app-pilot *ngFor="let pilot of pilots"
+           [pilot]="pilot"
+           [class.selected]="selectedPilot === pilot">
+
+  <button *ngIf="selectedPilot !== pilot; else deselectButton"
+          class="select-button"  (click)="select(pilot)">
+    Zaznacz
+  </button>
+  <ng-template #deselectButton>
+    <button class="deselect-button" (click)="select(null)">
+      Odznacz
+    </button>
+  </ng-template>
+
+</app-pilot>

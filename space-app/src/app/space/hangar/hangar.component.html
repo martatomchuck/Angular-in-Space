@@ -1,2 +1,8 @@
-<h1>Hangar</h1>
-<app-space-ship></app-space-ship>
+<div class="hangar-section">
+  <h1>Hangar</h1>
+  <app-space-ship *ngFor="let spaceShip of spaceShips" [spaceShip]="spaceShip"></app-space-ship>
+</div>
+<div class="hangar-section">
+  <h1>Pilot Room</h1>
+  <app-pilot-room></app-pilot-room>
+</div>

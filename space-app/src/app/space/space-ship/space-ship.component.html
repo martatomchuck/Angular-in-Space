@@ -2,6 +2,7 @@
 
 <div class="images">
   <img [src]="spaceShip.imageUrl"/>
+  <img class="pilot" *ngIf="spaceShip.pilot" [src]="spaceShip.pilot.imageUrl"/>
 </div>
 
 <div class="health" [title]="'Health ' + spaceShip.health + '%'">

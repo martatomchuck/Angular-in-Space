@@ -1,0 +1,13 @@
+:host {
+  display: inline-block;
+  max-width: 150px;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: 100px;
+  padding: 10px;
+}

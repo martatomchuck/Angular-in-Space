@@ -1,0 +1,7 @@
+:host {
+  display: flex;
+}
+
+.hangar-section {
+  flex: 1;
+}

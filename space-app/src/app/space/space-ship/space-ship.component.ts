@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { SpaceShip } from '../space-ship';
 
 @Component({
   selector: 'app-space-ship',
@@ -8,12 +9,6 @@ import { Component } from '@angular/core';
 
 export class SpaceShipComponent {
 
-  spaceShip = {
-    modelName: 'Viper',
-    imageUrl: '/assets/spaceship.png',
-    health: 75,
-    activeShields: true,
-    activeWeapons: false
-  };
+  @Input() spaceShip: SpaceShip;
 
 }
