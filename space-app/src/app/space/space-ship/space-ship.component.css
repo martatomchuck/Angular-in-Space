@@ -1,0 +1,32 @@
+:host {
+  display: inline-block;
+  max-width: 130px;
+  margin: 10px;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.health {
+  background-color: red;
+  height: 10px;
+}
+
+.health div {
+  background-color: green;
+  height: 100%;
+}
+
+.property {
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px;
+  color: grey;
+}
+
+.property.active {
+  color: white;
+}
