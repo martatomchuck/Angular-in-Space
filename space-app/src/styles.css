@@ -6,5 +6,6 @@ body {
   background-image: url('/assets/cosmos.png');
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 10px 50px;
+  margin: 0;
+  padding: 0;
 }

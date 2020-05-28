@@ -1,7 +1,17 @@
 :host {
   display: flex;
+  margin: 20px 60px 20px 40px;
 }
 
 .hangar-section {
   flex: 1;
+}
+
+a {
+  font-weight: bold;
+  color: white;
+}
+
+a.active {
+  color: orange;
 }
