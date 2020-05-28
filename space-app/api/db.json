@@ -1,0 +1,28 @@
+{
+  "pilots": [
+    {
+      "id": 1,
+      "firstName": "Jacob",
+      "lastName": "Kosmiczny",
+      "imageUrl": "/assets/jacob.svg"
+    },
+    {
+      "id": 2,
+      "firstName": "Christopher",
+      "lastName": "Mars",
+      "imageUrl": "/assets/christopher.svg"
+    },
+    {
+      "id": 3,
+      "firstName": "Mathias",
+      "lastName": "Nieziemski",
+      "imageUrl": "/assets/mathias.svg"
+    },
+    {
+      "id": 4,
+      "firstName": "Alexa",
+      "lastName": "Orbita",
+      "imageUrl": "/assets/alexa.svg"
+    }
+  ]
+}
