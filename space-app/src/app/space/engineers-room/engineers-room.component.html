@@ -1,4 +1,7 @@
 <h1>Engineers Room</h1>
+
+<p>Aktualna liczba statków w hangarze: {{shipsCount | async}}</p>
+
 <form [formGroup]="form" (ngSubmit)="orderSpaceShips(form.value)">
 
   <div class="control-group">
