@@ -1,0 +1,31 @@
+:host h1 {
+  margin-top: 50px;
+}
+
+form {
+  display: block;
+  padding: 50px;
+  min-height: 180px;
+  background-color: #000b229a;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.control-label {
+  display: inline-block;
+  width: 120px;
+}
+
+.control-group {
+  margin: 12px 0;
+}
+
+.error {
+  display: block;
+  color: rgb(250, 66, 66);
+  padding: 10px;
+  margin: 20px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 2px;
+}

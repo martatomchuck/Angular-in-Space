@@ -1,0 +1,31 @@
+<h1>Engineers Room</h1>
+<form [formGroup]="form" (ngSubmit)="orderSpaceShips(form.value)">
+
+  <div class="control-group">
+    <label class="control-label">Typ:</label>
+    <label *ngFor="let spaceShipType of spaceShipTypes">
+      <input type="radio" formControlName="shipType" [value]="spaceShipType.value"/>
+      {{spaceShipType.label}}
+    </label>
+  </div>
+
+  <div class="control-group">
+    <label class="control-label">Ilość:</label>
+    <input type="number" formControlName="shipCount"/>
+    <span *ngIf="form.get('shipCount').hasError('required')" class="error">
+        podaj wartość
+    </span>
+    <span *ngIf="form.get('shipCount').hasError('max')" class="error">
+        Nasza moc przerobowa to 5 statków kosmicznych jednocześnie.
+    </span>
+    <span *ngIf="form.get('shipCount').hasError('min')" class="error">
+      Mniej niż zero? Jesteś pewny?
+    </span>
+  </div>
+
+  <div class="control-group">
+    <button type="submit" [disabled]="form.invalid || isProducing">Produkuj</button>
+    <p *ngIf="isProducing">Trwa produkcja...</p>
+  </div>
+
+</form>
