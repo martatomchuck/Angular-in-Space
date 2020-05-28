@@ -18,7 +18,7 @@ import { DestructionRoomComponent } from './destruction-room/destruction-room.co
     CommonModule,
     SpaceRoutingModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
   ],
   exports: [
     HangarComponent
