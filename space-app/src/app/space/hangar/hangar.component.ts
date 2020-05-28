@@ -16,9 +16,10 @@ export class HangarComponent implements OnInit {
   spaceShips: SpaceShip[] = [];
   selectedPilot: Pilot = null;
 
+  // STATYCZNIE UTWORZONE STATKI:
   ngOnInit() {
-    this.spaceShips.push(new FighterShip());
-    this.spaceShips.push(new BomberShip());
+    // this.spaceShips.push(new FighterShip());
+    // this.spaceShips.push(new BomberShip());
   }
 
   assignPilot(spaceShip: SpaceShip) {
