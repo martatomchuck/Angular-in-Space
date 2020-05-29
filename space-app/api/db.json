@@ -23,6 +23,23 @@
       "firstName": "Alexa",
       "lastName": "Orbita",
       "imageUrl": "/assets/alexa.svg"
+    },
+    {
+      "id": 5,
+      "firstName": "Fsdfasdf",
+      "lastName": "sdasa",
+      "imageUrl": "/assets/unknown-pilot.png"
+    }
+  ],
+  "forbidden-names": [
+    {
+      "name": "Maruda"
+    },
+    {
+      "name": "Ciamajda"
+    },
+    {
+      "name": "Gapcio"
     }
   ]
 }
