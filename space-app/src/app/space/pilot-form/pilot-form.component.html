@@ -1,0 +1,38 @@
+<h1>{{form.get('id').value ? 'Edycja pilota' : 'Dodawanie pilota'}}</h1>
+
+<form [formGroup]="form" (ngSubmit)="save()">
+    <div class="control-group">
+      <label class="control-label">Imię:</label>
+      <input type="text" formControlName="firstName">
+      <span *ngIf="form.get('firstName').hasError('required') && form.get('firstName').touched" class="error">
+        podaj wartość
+      </span>
+      <span *ngIf="form.get('firstName').hasError('pilotName')" class="error">
+        zacznij wielką literą
+      </span>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Nazwisko:</label>
+      <input type="text" formControlName="lastName">
+      <span *ngIf="form.get('lastName').hasError('required') && form.get('lastName').touched" class="error">
+        podaj wartość
+      </span>
+      <span *ngIf="form.get('lastName').hasError('pilotForbidden')" class="error">
+        zakazane nazwisko
+      </span>
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Avatar URL:</label>
+      <input type="text" formControlName="imageUrl">
+    </div>
+
+    <div class="control-group">
+      <label class="control-label">Podgląd:</label>
+      <img [src]="form.get('imageUrl').value">
+    </div>
+
+    <button type="button" routerLink="../..">Anuluj</button>
+    <button type="submit" [disabled]="form.invalid">Zapisz</button>
+  </form>

@@ -1,0 +1,9 @@
+<p>
+  Wybierz źródło danych wywiadowczych:
+  <select (change)="selectSource($event.target.value)">
+    <option value="">wybierz</option>
+    <option *ngFor="let option of options" [value]="option.url">{{option.name}}</option>
+  </select>
+</p>
+
+<iframe [src]="source" *ngIf="source"></iframe>
